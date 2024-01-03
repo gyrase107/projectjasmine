@@ -17,13 +17,8 @@ from scipy.stats import spearmanr
 from firebase_admin import credentials
 from firebase_admin import firestore, storage
 
-# Get the raw content of the JSON file from the GitHub URL
-url = "https://raw.githubusercontent.com/gyrase107/projectjasmine/main/jasminefung-firebase-adminsdk-g707d-7779b1bc77.json"
-response = requests.get(url)
-json_content = response.text
-
-# Provide the JSON content to the credentials.Certificate() function
-growth_cred = credentials.Certificate(json_content)
+# Initialize Firebase Admin SDK for growth records
+growth_cred = credentials.Certificate("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\jasminefung-firebase-adminsdk-g707d-7779b1bc77.json")
 
 if not firebase_admin._apps:
     growth_app = firebase_admin.initialize_app(growth_cred, name='GrowthApp')
@@ -36,7 +31,7 @@ try:
     upload_app = firebase_admin.get_app(name='UploadApp')
 except ValueError:
     upload_app = firebase_admin.initialize_app(upload_cred, name='UploadApp', options={'storageBucket': 'jasminefungmedia.appspot.com'})
-
+    
 #----------------------------#
 #----------------------------#
 #----------------------------#
