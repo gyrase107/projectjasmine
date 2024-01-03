@@ -26,7 +26,7 @@ else:
     growth_app = firebase_admin.get_app(name='GrowthApp')
 
 # Initialize Firebase Admin SDK for media uploads
-upload_cred = credentials.Certificate("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\jasminefungmedia-firebase-adminsdk-4xoz8-bb74c02b14.json")
+upload_cred = credentials.Certificate("jasminefungmedia-firebase-adminsdk-4xoz8-bb74c02b14.json")
 try:
     upload_app = firebase_admin.get_app(name='UploadApp')
 except ValueError:
