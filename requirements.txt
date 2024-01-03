@@ -1,4 +1,4 @@
-firebase_admin==5.3.1
+firebase_admin==5.3.0
 google-cloud-storage==1.45.0
 matplotlib==3.5.1
 numpy==1.21.5
