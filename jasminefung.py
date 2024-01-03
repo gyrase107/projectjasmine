@@ -6,7 +6,6 @@ import mimetypes
 import traceback
 import numpy as np
 import pandas as pd
-import tkinter as tk
 import firebase_admin
 from PIL import Image
 import streamlit as st
