@@ -19,7 +19,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore, storage
 
 # Initialize Firebase Admin SDK for growth records
-growth_cred = credentials.Certificate("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\jasminefung-firebase-adminsdk-g707d-7779b1bc77.json")
+growth_cred = credentials.Certificate("https://github.com/gyrase107/projectjasmine/blob/main/jasminefung-firebase-adminsdk-g707d-7779b1bc77.json")
 
 if not firebase_admin._apps:
     growth_app = firebase_admin.initialize_app(growth_cred, name='GrowthApp')
@@ -27,7 +27,7 @@ else:
     growth_app = firebase_admin.get_app(name='GrowthApp')
 
 # Initialize Firebase Admin SDK for media uploads
-upload_cred = credentials.Certificate("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\jasminefungmedia-firebase-adminsdk-4xoz8-bb74c02b14.json")
+upload_cred = credentials.Certificate("https://github.com/gyrase107/projectjasmine/blob/main/jasminefungmedia-firebase-adminsdk-4xoz8-bb74c02b14.json")
 try:
     upload_app = firebase_admin.get_app(name='UploadApp')
 except ValueError:
@@ -404,8 +404,8 @@ def growth_percentile_analysis():
         st.markdown("<h7 style='text-align: left; color: black; font-size: 12px;'>Source: https://www.cdc.gov/growthcharts/percentile_data_files.htm </h7>", unsafe_allow_html=True)
 
         # Read CDC files 
-        cdc_wt = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\wtageinf.csv')
-        cdc_len = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\lenageinf.csv')
+        cdc_wt = pd.read_csv('https://github.com/gyrase107/projectjasmine/blob/main/wtageinf.csv')
+        cdc_len = pd.read_csv(https://github.com/gyrase107/projectjasmine/blob/main/lenageinf.csv')
 
         # Weight
         cdc_wt_f = cdc_wt[cdc_wt['Sex'] != 1]
