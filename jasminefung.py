@@ -239,10 +239,6 @@ def display_analysis_content():
     st.markdown("<h7 style='text-align: left;'></h7>", unsafe_allow_html=True)
     st.markdown("<h7 style='text-align: left;'></h7>", unsafe_allow_html=True)
     st.markdown("<h5 style='text-align: left; text-decoration: underline; font-weight: bold;'>Type of analysis:</h5>", unsafe_allow_html=True)
-    st.markdown("<h7 style='text-align: left;'>1. Growth Trend Analysis </h7>", unsafe_allow_html=True)
-    st.markdown("<h7 style='text-align: left;'>2. Correlation Analysis </h7>", unsafe_allow_html=True)
-    st.markdown("<h7 style='text-align: left;'>3. Growth Percentile Analysis </h7>", unsafe_allow_html=True)
-    st.markdown("<h7 style='text-align: left;'>4. Regression analysis </h7>", unsafe_allow_html=True)
     st.markdown("<h7 style='text-align: left;'></h7>", unsafe_allow_html=True)
 
 def form_dt():
