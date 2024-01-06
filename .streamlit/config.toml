@@ -1,6 +1,7 @@
 [theme]
-primaryColor="#ecdffd"
+primaryColor="#fdf2ff"
 backgroundColor="#fffff0"
-secondaryBackgroundColor="#ecdffd"
+secondaryBackgroundColor="#fdf2ff"
 textColor="#00008b"
-font = "cambria"
+font="serif"
+font = "Monospace"
