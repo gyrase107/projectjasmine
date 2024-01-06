@@ -1,6 +1,6 @@
 [theme]
-base="light"
 primaryColor="#ecdffd"
+backgroundColor="#fffff0"
 secondaryBackgroundColor="#ecdffd"
 textColor="#00008b"
 font = "cambria"
