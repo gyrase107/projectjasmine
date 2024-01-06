@@ -1016,7 +1016,7 @@ def main():
         copyright = "Copyright © 2023 Alan Fung. All rights reserved."
         st.sidebar.markdown(f'<p style="text-align: left; font-size: 12px;">{copyright}</p>', unsafe_allow_html=True)
                 
-        st.markdown("<h6 style='text-align: left;'>This is the homepage, which contains general information about me. </h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: left;'>This is the homepage, which contains the general information about myself. </h6>", unsafe_allow_html=True)
         st.markdown("<h6 style='text-align: left;'>Click the '>' button at the top left to explore more!</h6>", unsafe_allow_html=True)
         homepage()
 
