@@ -777,7 +777,7 @@ def regression_analysis():
 def album():
     excluded_collections = ['comments', 'diary_entries', 'growth_records', 'others']
     image_size = (400, 400)  # Desired size for the images (width, height)
-    video_size = (400, 300)  # Desired size for the videos (width, height)
+    video_size = (350, 250)  # Desired size for the videos (width, height)
 
     bucket = storage.bucket(app=firebase_admin.get_app(name='UploadApp'))
     blobs = bucket.list_blobs()
