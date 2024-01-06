@@ -1008,7 +1008,7 @@ def main():
     st.title("Project Jasmine")
 
     # Create tabs for pictures, videos, growth records, and comments
-    tabs = ["Homepage","Growth Record","Album", "Comments", "Architecture & Requirements", "Media Upload (Password Protected)", "Diary (Password Protected)"]
+    tabs = ["Homepage","Growth Record & Statistical Analysis","Album", "Comments", "Architecture & Requirements", "Media Upload (Password Protected)", "Diary (Password Protected)"]
     selected_tab = st.sidebar.selectbox("Select Tab", tabs)
 
     if selected_tab == "Homepage":
@@ -1020,7 +1020,7 @@ def main():
         st.markdown("<h6 style='text-align: left;'>Click the '>' button at the top left to explore more!</h6>", unsafe_allow_html=True)
         homepage()
 
-    elif selected_tab == "Growth Record":
+    elif selected_tab == "Growth Record & Statistical Analysis":
 
         copyright = "Copyright © 2023 Alan Fung. All rights reserved."
         st.sidebar.markdown(f'<p style="text-align: left; font-size: 12px;">{copyright}</p>', unsafe_allow_html=True)
