@@ -873,7 +873,31 @@ def leave_comment():
 # Below are the function(s) for 'Architecture & Requirements'
 
 def architecture_requirement():
-    st.write("")
+
+    st.markdown("<h7 style='text-align: left; font-size: 15px; font-weight: bold;'></h7>", unsafe_allow_html=True)
+    # Create sample data
+    data = {
+        'Version no.': ['0.1'],
+        'Version name': ['First version'],
+        'Date': ['2024-01-07'],
+        'Made by': ['Alan Fung']
+    }
+    
+    # Create a DataFrame
+    df = pd.DataFrame(data)
+    
+    # Remove the index column
+    df = df.reset_index(drop=True)
+    
+    # Format the DataFrame with left-aligned text
+    formatted_df = df.style.set_properties(**{'text-align': 'left'})
+    
+    # Convert the formatted DataFrame back to HTML
+    html_table = formatted_df.to_html(index=False, escape=False)
+    
+    # Display the table in Streamlit with left-aligned text
+    st.markdown(html_table, unsafe_allow_html=True)
+
     st.write("______________________")
     st.write("#### Architecture Diagram:")
 
@@ -906,7 +930,7 @@ def architecture_requirement():
     st.markdown("<h7 style='text-align: left; font-size: 15px;'>5. The solution has a game that allow kids to learn.</h7>", unsafe_allow_html=True)
 
     st.write("______________________")
-
+    
 #----------------------------#
 #----------------------------#
 #----------------------------#
