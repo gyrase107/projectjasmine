@@ -517,8 +517,8 @@ def growth_percentile_analysis():
 
         # Read CDC files
 
-        cdc_wt = pd.read_csv('https://raw.githubusercontent.com/gyrase107/projectjasmine/main/wtageinf.csv')
-        cdc_len = pd.read_csv('https://raw.githubusercontent.com/gyrase107/projectjasmine/main/lenageinf.csv')
+        cdc_wt = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\wtageinf.csv')
+        cdc_len = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\lenageinf.csv')
         
         # Weight
         cdc_wt_f = cdc_wt[cdc_wt['Sex'] != 1]
