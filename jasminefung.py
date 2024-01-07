@@ -515,13 +515,11 @@ def growth_percentile_analysis():
 
         st.markdown("<h7 style='text-align: left; font-size: 12px;'>Source: https://www.cdc.gov/growthcharts/percentile_data_files.htm </h7>", unsafe_allow_html=True)
 
-        # Read CDC files 
-        wta_url ='https://raw.githubusercontent.com/gyrase107/projectjasmine/main/wtageinf.csv'
-        cdc_wt = pd.read_csv(wta_url)
+        # Read CDC files
 
-        len_url ='https://raw.githubusercontent.com/gyrase107/projectjasmine/main/lenageinf.csv'
-        cdc_len = pd.read_csv(len_url)
-
+        cdc_wt = pd.read_csv('https://raw.githubusercontent.com/gyrase107/projectjasmine/main/wtageinf.csv')
+        cdc_len = pd.read_csv('https://raw.githubusercontent.com/gyrase107/projectjasmine/main/lenageinf.csv')
+        
         # Weight
         cdc_wt_f = cdc_wt[cdc_wt['Sex'] != 1]
         cdc_wt_f['day no.'] = cdc_wt_f['Agemos'].apply(lambda x: int(x * 30))
