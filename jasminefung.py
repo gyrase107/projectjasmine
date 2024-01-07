@@ -516,8 +516,8 @@ def growth_percentile_analysis():
         st.markdown("<h7 style='text-align: left; font-size: 12px;'>Source: https://www.cdc.gov/growthcharts/percentile_data_files.htm </h7>", unsafe_allow_html=True)
 
         # Read CDC files 
-        cdc_wt = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\wtageinf.csv')
-        cdc_len = pd.read_csv('C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\lenageinf.csv')
+        cdc_wt = pd.read_csv('https://github.com/gyrase107/projectjasmine/blob/4b975a32598b966a032d0e588f065d8a54912494/wtageinf.csv')
+        cdc_len = pd.read_csv('https://github.com/gyrase107/projectjasmine/blob/4b975a32598b966a032d0e588f065d8a54912494/lenageinf.csv')
 
         # Weight
         cdc_wt_f = cdc_wt[cdc_wt['Sex'] != 1]
