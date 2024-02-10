@@ -18,6 +18,7 @@ import plotly.graph_objects as go
 from scipy.stats import spearmanr
 from firebase_admin import credentials
 from firebase_admin import firestore, storage
+from streamlit_option_menu import option_menu
 
 # Initialize Firebase Admin SDK for growth records
 growth_cred = credentials.Certificate("jasminefung-firebase-adminsdk-g707d-7779b1bc77.json")
@@ -1030,7 +1031,7 @@ def diary_tab():
 def main():
     st.title("Project Jasmine")
 
-    # Create tabs for pictures, videos, growth records, and comments
+# Create tabs for pictures, videos, growth records, and comments
     with st.sidebar:
         selected_tab = option_menu(
             menu_title = None,
