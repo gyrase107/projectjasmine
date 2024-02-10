@@ -1031,8 +1031,14 @@ def main():
     st.title("Project Jasmine")
 
     # Create tabs for pictures, videos, growth records, and comments
-    tabs = ["Homepage","Growth & Statistical Analysis","Album", "Comments", "Architecture & Requirements", "Media Upload (Password Protected)", "Diary (Password Protected)"]
-    selected_tab = st.sidebar.selectbox("Select Tab", tabs)
+    with st.sidebar:
+        selected_tab = option_menu(
+            menu_title = None,
+            options = ["Homepage","Growth & Statistical Analysis","Album", "Comments", "Architecture & Requirements", "Media Upload (Password Protected)", "Diary (Password Protected)"],
+            icons = ["house-door", "bar-chart-line", "card-image", "chat-left-dots", "buildings", "cloud-arrow-up", "journal-text"],
+            menu_icon = "cast",
+            default_index = 0,
+        )
 
     if selected_tab == "Homepage":
         
