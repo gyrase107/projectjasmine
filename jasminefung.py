@@ -882,6 +882,10 @@ def architecture_requirement():
         'Version name': ['First version'],
         'Date': ['2024-01-07'],
         'Made by': ['Alan Fung'],
+        'Version no.': ['0.2'],
+        'Version name': ['Edited Sidebar Menu'],
+        'Date': ['2024-02-10'],
+        'Made by': ['Alan Fung']
     }
     
     # Create a DataFrame
