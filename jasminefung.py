@@ -158,6 +158,11 @@ def homepage():
 # Below are the functions for tab 'Growth Record'
 # Function - upload growth record
 def upload_growth_record():
+    password = st.text_input("Password", type="password", key="password_input")
+    if password != "123":
+        st.error("Please input correct password to enter growth data")
+        return
+
     date = st.date_input("Date", key="date_input")
     height = st.number_input("height_cm", step=0.1, format="%.1f", key="height_input")
     weight = st.number_input("weight_kg", step=0.1, format="%.1f", key="weight_input")
