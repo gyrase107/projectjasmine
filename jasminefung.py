@@ -884,7 +884,7 @@ def architecture_requirement():
     # Create sample data
     data = {
         'Version no.': ['0.1', '0.2', '0.3'],
-        'Version name': ['First version', 'Edited Sidebar Menu', 'Added Password Entry when enter growth data'],
+        'Version name': ['First version', 'Edited Sidebar Menu', 'Password Entry for Growth Data'],
         'Date': ['2024-01-07', '2024-02-10', '2024-02-22'],
         'Made by': ['Alan Fung', 'Alan Fung', 'Alan Fung'],
     }
