@@ -1041,7 +1041,7 @@ def diary_tab():
 
 def play_background_music():
     # Load the audio file
-    audio_data, sampling_rate = sf.read("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\a_whole_new_world_electric_guitar.mp3")
+    audio_data, sampling_rate = sf.read(a_whole_new_world_electric_guitar.mp3")
 
     # Repeat the audio in an infinite loop
     while True:
