@@ -19,6 +19,9 @@ from scipy.stats import spearmanr
 from firebase_admin import credentials
 from firebase_admin import firestore, storage
 from streamlit_option_menu import option_menu
+import threading
+import sounddevice as sd
+import soundfile as sf
 
 # Initialize Firebase Admin SDK for growth records
 growth_cred = credentials.Certificate("jasminefung-firebase-adminsdk-g707d-7779b1bc77.json")
@@ -1028,6 +1031,25 @@ def diary_tab():
             st.text("No comments found for this date.")
     else:
         st.error("Incorrect password!")
+#----------------------------#
+#----------------------------#
+#----------------------------#
+#----------------------------#
+#----------------------------#
+
+# Below are the function(s) for 'background_music'
+
+def play_background_music():
+    # Load the audio file
+    audio_data, sampling_rate = sf.read("C:\\Users\\zzfunal\\A_Python Projects\\JasmineFung\\a_whole_new_world_electric_guitar.mp3")
+
+    # Repeat the audio in an infinite loop
+    while True:
+        sd.play(audio_data, sampling_rate)
+        sd.wait()
+
+# Start playing the background music in a separate thread
+threading.Thread(target=play_background_music).start()
 
 #----------------------------#
 #----------------------------#
