@@ -883,10 +883,10 @@ def architecture_requirement():
     st.markdown("<h7 style='text-align: left; font-size: 15px; font-weight: bold;'></h7>", unsafe_allow_html=True)
     # Create sample data
     data = {
-        'Version no.': ['0.1', '0.2'],
-        'Version name': ['First version', 'Edited Sidebar Menu'],
-        'Date': ['2024-01-07', '2024-02-10'],
-        'Made by': ['Alan Fung', 'Alan Fung'],
+        'Version no.': ['0.1', '0.2', '0.3'],
+        'Version name': ['First version', 'Edited Sidebar Menu', 'Added Password Entry when enter growth data'],
+        'Date': ['2024-01-07', '2024-02-10', '2024-02-22'],
+        'Made by': ['Alan Fung', 'Alan Fung', 'Alan Fung'],
     }
     
     # Create a DataFrame
