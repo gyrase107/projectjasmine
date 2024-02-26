@@ -86,7 +86,7 @@ def homepage():
     gucci_mui = image.resize((500, 500))
 
     # Image qe_jasmine
-    blob = bucket.blob("others/qe_jasmine.jpeg")
+    blob = bucket.blob("others/qe_jasmine.png")
     qe_jasmine = blob.generate_signed_url(datetime.timedelta(seconds=300), method="GET")
     response = requests.get(qe_jasmine)
     image_data = response.content
